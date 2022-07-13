@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rooms>
+    <room conditioner="true" countDoor="8" countWindow="4" numberFloor="1" numberRoom="7" predestination="lol" square="34.0"/>
+</rooms>

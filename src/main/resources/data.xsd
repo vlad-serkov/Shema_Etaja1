@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="rooms" type="roomsType"/>
+    <xsd:complexType name="roomType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute type="xsd:string" name="conditioner"/>
+                <xsd:attribute type="xsd:string" name="countDoor" />
+                <xsd:attribute type="xsd:string" name="countWindow"/>
+                <xsd:attribute type="xsd:string" name="numberFloor"/>
+                <xsd:attribute type="xsd:string" name="numberRoom"/>
+                <xsd:attribute type="xsd:string" name="predestination"/>
+                <xsd:attribute type="xsd:string" name="square"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="roomsType" mixed="true">
+        <xsd:sequence>
+            <xsd:element type="roomType" name="room" maxOccurs="unbounded" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
