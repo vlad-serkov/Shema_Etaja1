@@ -5,13 +5,13 @@
     <xsd:complexType name="roomType">
         <xsd:simpleContent>
             <xsd:extension base="xsd:string">
-                <xsd:attribute type="xsd:string" name="conditioner"/>
-                <xsd:attribute type="xsd:string" name="countDoor" />
-                <xsd:attribute type="xsd:string" name="countWindow"/>
-                <xsd:attribute type="xsd:string" name="numberFloor"/>
-                <xsd:attribute type="xsd:string" name="numberRoom"/>
+                <xsd:attribute type="xsd:boolean" name="conditioner"/>
+                <xsd:attribute type="xsd:integer" name="countDoor" />
+                <xsd:attribute type="xsd:integer" name="countWindow"/>
+                <xsd:attribute type="xsd:integer" name="numberFloor"/>
+                <xsd:attribute type="xsd:integer" name="numberRoom"/>
                 <xsd:attribute type="xsd:string" name="predestination"/>
-                <xsd:attribute type="xsd:string" name="square"/>
+                <xsd:attribute type="xsd:double" name="square"/>
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
